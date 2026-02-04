@@ -1,50 +1,91 @@
-# 🌳 SharePoint Org Chart - Modern Tree View
+# 🌳 SharePoint Org Chart — Modern Tree View
 
 [![Latest Release](https://img.shields.io/github/v/release/alessandro-Petrone/struttura-aziendale?style=for-the-badge)](https://github.com/alessandro-Petrone/struttura-aziendale/releases/latest)
 [![License](https://img.shields.io/github/license/alessandro-Petrone/struttura-aziendale?style=for-the-badge&cacheSeconds=60)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge)](https://www.paypal.com/donate/?hosted_button_id=C3KYQ7FB9PRKQ)
 ![SPFx Version](https://img.shields.io/badge/SPFx-1.22.2-green?style=for-the-badge)
 
-Advanced organizational chart for SharePoint Online, built with SPFx and Microsoft Graph. It provides a beautiful, responsive, and highly interactive view of your company structure.
-
-## ✨ Features
-- **Modern Tree View**: Perfectly aligned hierarchy with clean connecting lines.
-- **Dynamic Grid View**: Switch between an organic tree layout and a compact grid.
-- **Advanced Search**: Search colleagues by name, email, or job title.
-- **Smart Filtering**: Filter by department (tabs), location (office), and alphabetical listing.
-- **Interactive Profiles**: Detailed hover cards with direct Email and Teams links.
-- **Fully Responsive**: Optimized for both desktop and mobile devices.
-
-## ☕ Support the Project
-If you find this project useful and would like to support its development, you can make a donation via PayPal:
-
-**[👉 Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=C3KYQ7FB9PRKQ)**
-
-Your support is greatly appreciated! ❤️
+A modern, dynamic, and fully interactive organizational chart for **SharePoint Online**, powered by **SPFx** and **Microsoft Graph**.  
+Ideal for HR portals, corporate intranets, employee directories, and managerial dashboards.
 
 ---
 
-## 🛠️ Used SharePoint Framework Version
-![version](https://img.shields.io/badge/version-1.22.2-green.svg)
+## 🔍 Overview
 
-## 📖 Prerequisites
-- Microsoft 365 Tenant
-- SharePoint Online
-- API Permissions for Microsoft Graph:
+**Struttura Aziendale – Modern Tree View** provides a beautiful hierarchical visualization of your company structure, supporting multiple layouts, filters, and interactive profile cards. It’s optimized for performance and mobile.
+
+**Use cases**
+- HR department directory
+- Team & department overviews
+- Org navigation and discovery
+- Leadership & reporting lines
+
+---
+
+## ✨ Features
+
+### 🌲 Modern Tree Layout
+- Perfect alignment for hierarchy nodes
+- Smooth connecting lines/curves
+- Auto‑expand/collapse children
+- Focus/center on selected node
+
+### 📊 Dynamic Grid View
+- Toggle between Tree and compact Grid
+- Ideal for large organizations
+
+### 🔎 Advanced Search
+- Search by **Name**, **Email**, **Job Title**
+- Fast highlight and scroll-to-card
+
+### 🧭 Smart Filtering
+- Tabs by **Department**
+- Filter by **Office/Location**
+- Alphabetical (A–Z) listing
+
+### 🧑‍💼 Interactive Profile Cards
+- Title, Department, Email link
+- Microsoft Teams deep-link
+- Hover details and quick actions
+
+### 📱 Fully Responsive
+- Mobile-friendly layout
+- Centered tree scaling
+- Smart grid wrapping
+
+---
+
+## 🖼️ Screenshots / Demo
+
+> Sostituisci i placeholder con le tue immagini e (se vuoi) una GIF.
+
+| Tree View | Grid View |
+|---|---|
+| ![Tree View](docs/images/tree-view.png) | ![Grid View](docs/images/grid-view.png) |
+
+**Demo GIF**  
+![Demo](docs/images/demo.gif)
+
+---
+
+## 📦 Installation
+
+### ✅ Prerequisites
+- Microsoft 365 Tenant  
+- SharePoint Online  
+- **SPFx 1.22+**  
+- API Permissions (via Microsoft Graph):
   - `User.Read.All`
   - `User.ReadBasic.All`
 
-## 🚀 Minimal Path to Awesome
-- Clone this repository
-- Ensure that you are at the solution folder
-- In the command-line run:
-  - `npm install`
-  - `npx heft build`
-  - `npx heft package-solution --production`
-- Upload the `.sppkg` file from `sharepoint/solution` to your SharePoint App Catalog.
+> Questi permessi vengono approvati tramite **SharePoint Admin Center → API Access** dopo il deploy dell’app.
 
-## 📝 Disclaimer
-**THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+### 🚀 Minimal Path to Awesome
 
----
-*Created with ❤️ for the SharePoint Community*
+```bash
+git clone https://github.com/alessandro-Petrone/struttura-aziendale.git
+cd struttura-aziendale
+
+npm install
+npx heft build
+npx heft package-solution --production
