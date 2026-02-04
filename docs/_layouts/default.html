@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- CSS PRINCIPALE -->
+  <!-- CSS principale -->
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
 
-  <!-- Fluent UI Icons (facoltativo) -->
+  <!-- (opzionale) Fluent UI icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fluentui/svg-icons/fonts/fluent-icons.css">
+
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- HEADER -->
   <header class="wt-header">
     <div class="wt-container wt-nav">
 
-      <!-- LOGO + BRAND -->
       <div class="wt-brand">
         <a href="{{ '/' | relative_url }}">
           <img src="{{ '/assets/img/logo.png' | relative_url }}" class="wt-logo" alt="Logo">
@@ -36,7 +37,7 @@
     </div>
   </header>
 
-  <!-- SIDEBAR MOBILE -->
+  <!-- SIDEBAR -->
   <aside id="wt-sidebar" class="wt-sidebar">
     <div class="wt-sidebar-head">
       <strong>Menu</strong>
@@ -57,7 +58,7 @@
 
   <!-- FOOTER -->
   <footer class="wt-footer">
-    <div class="wt-container" style="color:white;">
+    <div class="wt-container" style="color: white;">
       © {{ site.time | date: "%Y" }} {{ site.brand.name }} — Tutti i diritti riservati
     </div>
   </footer>
