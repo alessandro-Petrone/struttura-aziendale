@@ -1,56 +1,37 @@
-/* FLUENT UI BUTTONS */
-.fluent-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: all .15s ease;
-  cursor: pointer;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #334;
+  margin: 0;
+  padding: 0;
 }
 
-/* Primary */
-.fluent-primary {
-  background: #0078d4;
-  color: white !important;
-}
-.fluent-primary:hover {
-  background: #106ebe;
-  box-shadow: 0 2px 6px rgba(0,0,0,.2);
-}
-
-/* Secondary */
-.fluent-secondary {
-  background: #f3f2f1;
-  color: #323130 !important;
-  border: 1px solid #e1dfdd;
-}
-.fluent-secondary:hover {
-  background: #e1dfdd;
-}
-
-/* Icon spacing (optional) */
-.fluent-btn > i {
-  font-size: 1.2em;
-}
-/* LOGO */
-.wt-logo {
-  height: 38px;
-  width: auto;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-/* Allineamento brand */
-.wt-brand a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
+.wt-header {
+  background: #0a3d62;
   color: white;
-  font-weight: 700;
-  font-size: 1.15rem;
+  padding: 14px 0;
+}
+
+.wt-nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.wt-container {
+  width: 90%;
+  margin: auto;
+}
+
+.wt-main {
+  padding-top: 40px;
+}
+
+.wt-footer {
+  background: #022336;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
 }
