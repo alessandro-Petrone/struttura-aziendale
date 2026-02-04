@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.17.1",
+    "sdksVersions": {},
+    "version": "1.22.2",
+    "libraryName": "orgchart-entra-clean",
+    "libraryId": "729f4ca2-79a0-4967-b109-7239ec229530",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "orgchart-entra-clean",
+    "solutionShortDescription": "orgchart-entra-clean description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

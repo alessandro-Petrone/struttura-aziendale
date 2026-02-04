@@ -1,0 +1,71 @@
+.org-chart ul {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.org-chart li {
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+  padding: 20px 5px 0 5px;
+}
+
+/* LINEE ORIZZONTALI */
+.org-chart li::before,
+.org-chart li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  height: 20px;
+}
+
+.org-chart li::after {
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
+/* rimuove linee inutili */
+.org-chart li:only-child::after,
+.org-chart li:only-child::before {
+  display: none;
+}
+
+.org-chart li:first-child::before {
+  border: none;
+}
+
+.org-chart li:last-child::after {
+  border: none;
+}
+
+/* LINEA VERTICALE */
+.org-chart ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 1px solid #ccc;
+  width: 0;
+  height: 20px;
+}
+
+/* CARD */
+.node {
+  border: 1px solid #ccc;
+  padding: 12px;
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  min-width: 200px;
+}
+
+.node .job {
+  font-size: 12px;
+  color: #666;
+}

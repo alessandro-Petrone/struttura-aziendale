@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "company-org-chart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/companyOrgChart/CompanyOrgChartWebPart.js",
+          "manifest": "./src/webparts/companyOrgChart/CompanyOrgChartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CompanyOrgChartWebPartStrings": "lib/webparts/companyOrgChart/loc/{locale}.js"
+  }
+}
