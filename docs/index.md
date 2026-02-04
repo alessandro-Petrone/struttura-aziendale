@@ -10,9 +10,7 @@ title: WebTecnologie — Soluzioni Digitali e Applicazioni Moderne
     piattaforme enterprise e siti WordPress personalizzati.
   </p>
 
-  <a class="wt-btn" href="/struttura-aziendale/progetti">
-    🚀 Vedi i Progetti
-  </a>
+  /struttura-aziendale/progetti🚀 Vedi i Progetti</a>
 </div>
 
 ## 🔧 Cosa facciamo
