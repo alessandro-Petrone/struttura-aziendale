@@ -1,5 +1,10 @@
 # 🌳 SharePoint Org Chart - Modern Tree View
 
+https://img.shields.io/github/v/release/alessandro-Petrone/struttura-aziendale?style=for-the-badge](https://github.com/alessandro-Petrone/struttura-aziendale/releases/latest)
+https://img.shields.io/github/license/alessandro-Petrone/struttura-aziendale?style=for-the-badge
+https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge](https://www.paypal.com/donate/?hosted_button_id=C3KYQ7FB9PRKQ)
+https://img.shields.io/badge/SPFx-1.22.2-green?style=for-the-badge
+
 Advanced organizational chart for SharePoint Online, built with SPFx and Microsoft Graph. It provides a beautiful, responsive, and highly interactive view of your company structure.
 
 ## ✨ Features
