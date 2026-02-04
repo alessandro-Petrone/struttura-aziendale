@@ -1,1 +1,63 @@
+:root{
+  --brand:#0a3d62; --accent:#22a6b3;
+  --heroA:#1e8bc3; --heroB:#22a6b3; --heroC:#6ab04c;
+  --text:#1d1d1f; --muted:#6b7280; --bg:#f7f9fb; --card:#ffffff; --border:#e5e7eb;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--text);background:var(--bg);}
 
+/* Containers */
+.wt-container{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.wt-header{position:sticky;top:0;z-index:1000;background:var(--brand);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.wt-nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.wt-brand a{color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem;letter-spacing:.3px}
+.wt-menu{display:flex;gap:18px}
+.wt-menu a{color:#fff;text-decoration:none;opacity:.95}
+.wt-menu a:hover{opacity:1}
+.wt-burger{display:none;background:transparent;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+
+/* Sidebar */
+.wt-sidebar{position:fixed;inset:0 0 0 auto;width:280px;background:#0d466f;color:#fff;transform:translateX(100%);transition:transform .25s ease;box-shadow:-6px 0 18px rgba(0,0,0,.15)}
+.wt-sidebar.open{transform:translateX(0)}
+.wt-sidebar-head{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:1px solid rgba(255,255,255,.12)}
+.wt-close{background:transparent;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+.wt-sidebar-links{display:flex;flex-direction:column;padding:10px}
+.wt-sidebar-links a{color:#fff;text-decoration:none;padding:12px;border-radius:6px}
+.wt-sidebar-links a:hover{background:rgba(255,255,255,.08)}
+
+/* Main */
+.wt-main{padding:28px 0}
+
+/* Hero (usalo su index.md) */
+.wt-hero{padding:70px 25px;margin:0 0 28px;border-radius:14px;color:#fff;background:linear-gradient(135deg,var(--heroA),var(--heroB),var(--heroC));box-shadow:0 12px 28px rgba(0,0,0,.10)}
+.wt-hero h1{font-size:2.4rem;margin:0 0 10px}
+.wt-hero p{font-size:1.15rem;opacity:.98;margin:0 0 18px}
+.wt-cta{display:inline-block;background:#fff;color:#0b3d62;padding:11px 16px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.wt-cta:hover{transform:translateY(-1px)}
+
+/* Sections */
+h2{margin:26px 0 12px}
+p{line-height:1.6;color:#212529}
+ul{line-height:1.7}
+
+/* Cards grid (portfolio) */
+.wt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:980px){.wt-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.wt-grid{grid-template-columns:1fr}}
+.wt-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(10,61,98,.06);transition:transform .12s ease, box-shadow .12s ease}
+.wt-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(10,61,98,.12)}
+.wt-card h3{margin:4px 0 6px}
+.wt-card p{color:var(--muted);margin:0 0 10px}
+.wt-card a{color:var(--accent);text-decoration:none;font-weight:600}
+
+/* Footer */
+.wt-footer{margin-top:30px;background:var(--brand);color:#fff}
+.wt-footer .wt-container{padding:16px 20px}
+
+/* Responsive menu */
+@media (max-width:880px){
+  .wt-menu{display:none}
+  .wt-burger{display:inline-block}
+}
