@@ -10,7 +10,7 @@ title: WebTecnologie — Soluzioni Digitali e Applicazioni Moderne
     piattaforme enterprise e siti WordPress personalizzati.
   </p>
 
-  <a class="wt-btn wt-btn-primary wt-cta-lg" href="{{ '/progetti' | relative_url }}">
+  {{ 
     🚀 Vedi i Progetti
   </a>
 </div>
@@ -23,15 +23,12 @@ title: WebTecnologie — Soluzioni Digitali e Applicazioni Moderne
 - **WordPress pro** (temi custom, API, performance)
 
 ## 📌 In evidenza
-**Struttura Aziendale — Web Part SPFx**  
-Organigramma dinamico + directory dipendenti integrata con Microsoft 365.
+**Struttura Aziendale — Web Part SPFx**
 
-<div style="margin-top:10px;">
-  <a class="wt-btn wt-btn-primary" href="https://webtecnologie.github.io/struttura-aziendale/">
-    🔍 Demo
-  </a>
+<div style="margin-top:12px;">
+  https://webtecnologie.github.io/struttura-aziendale/
 
-  <a class="wt-btn wt-btn-secondary" href="https://github.com/webtecnologie/struttura-aziendale" target="_blank">
-    💻 Codice
+  https://github.com/webtecnologie/struttura-aziendale
+     🧩 Codice
   </a>
 </div>
