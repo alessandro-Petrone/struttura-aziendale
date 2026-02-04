@@ -36,3 +36,21 @@
 .fluent-btn > i {
   font-size: 1.2em;
 }
+/* LOGO */
+.wt-logo {
+  height: 38px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Allineamento brand */
+.wt-brand a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
