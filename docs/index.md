@@ -1,3 +1,7 @@
+---
+layout: default
+title: WebTecnologie — Soluzioni Digitali e Applicazioni Moderne
+---
 
 <div style="text-align:center; padding: 40px 20px;">
   <h1 style="font-size:2.6em; font-weight:700;">WebTecnologie</h1>
