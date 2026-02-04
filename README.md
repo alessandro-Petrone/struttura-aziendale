@@ -1,7 +1,7 @@
 # 🌳 SharePoint Org Chart - Modern Tree View
 
 [![Latest Release](https://img.shields.io/github/v/release/alessandro-Petrone/struttura-aziendale?style=for-the-badge)](https://github.com/alessandro-Petrone/struttura-aziendale/releases/latest)
-[![License](https://img.shields.io/github/license/alessandro-Petrone/struttura-aziendale?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/github/license/alessandro-Petrone/struttura-aziendale?style=for-the-badge&cacheSeconds=60)](LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue?style=for-the-badge)](https://www.paypal.com/donate/?hosted_button_id=C3KYQ7FB9PRKQ)
 ![SPFx Version](https://img.shields.io/badge/SPFx-1.22.2-green?style=for-the-badge)
 
