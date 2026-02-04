@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+<div style="text-align:center; margin-bottom:30px;">
+    <img src="assets/img/logo.png" alt="WebTecnologie Logo" style="height:120px;">
+</div>
+
 <div class="wt-hero">
   <h1>Soluzioni Digitali, Cloud & AI</h1>
   <p>
