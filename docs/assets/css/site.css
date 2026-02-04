@@ -1,47 +1,123 @@
-/* Base */
-html, body { margin:0; padding:0; }
-body {
-  font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Segoe UI Emoji", sans-serif;
-  background:#f6f8fa;
-  color:#223;
-  line-height:1.55;
+/* ===========================
+   THEME TOKENS (Luxury Nero+Oro)
+   =========================== */
+:root {
+  /* Light (fallback) */
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --text: #151515;
+  --muted: #5c5c5c;
+  --border: #e6e6e6;
+
+  /* Brand gold */
+  --brand: #d4af37;         /* oro */
+  --brand-600: #c19d2f;
+  --brand-700: #b18f2a;
+
+  /* Header/footer */
+  --header-bg: #0f1114;
+  --header-grad: linear-gradient(180deg, #0f1114 0%, #0b0c0e 100%);
+  --footer-bg: #0f1114;
+
+  /* Effects */
+  --shadow-1: 0 8px 24px rgba(0,0,0,0.08);
+  --ring: 0 0 0 2px rgba(212, 175, 55, 0.35); /* ring gold */
 }
 
-/* Layout */
-.wt-container { width: min(1100px, 92%); margin: 0 auto; }
-.wt-main { padding: 32px 0 48px; }
+/* Dark scheme (auto) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0c;
+    --surface: #111214;
+    --text: #e9e9ea;
+    --muted: #b0b0b3;
+    --border: #1f2124;
 
-/* Header */
-.wt-header { background:#0a3d62; color:#fff; }
-.wt-nav { display:flex; align-items:center; gap:18px; padding:12px 0; }
-.wt-brand a { color:#fff; text-decoration:none; font-weight:600; font-size:18px; display:flex; align-items:center; gap:10px; }
-.wt-logo { height:28px; }
+    --header-bg: #0e0f12;
+    --header-grad: linear-gradient(180deg, #101215 0%, #0a0b0d 100%);
+    --footer-bg: #0e0f12;
 
-/* Menu */
-.wt-menu { margin-left:auto; display:flex; gap:16px; }
-.wt-menu a { color:#fff; text-decoration:none; font-weight:500; opacity:.95; }
-.wt-menu a:hover { opacity:1; text-decoration:underline; }
-
-/* Burger (mobile) */
-.wt-burger { display:none; background:transparent; color:#fff; border:0; font-size:22px; }
-@media (max-width: 820px) {
-  .wt-menu { display:none; }
-  .wt-burger { display:block; margin-left:auto; }
+    --shadow-1: 0 8px 24px rgba(0,0,0,0.35);
+  }
 }
 
-/* Sidebar (mobile) */
-.wt-sidebar { position:fixed; inset:0 0 0 auto; width:280px; background:#fff; border-left:1px solid #e5e7eb; transform:translateX(100%); transition:.25s ease; z-index:999; }
-.wt-sidebar.open { transform:translateX(0); }
-.wt-sidebar-head { display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid #eee; }
-.wt-sidebar-links { display:flex; flex-direction:column; padding:10px; }
-.wt-sidebar-links a { padding:10px 12px; color:#0a3d62; text-decoration:none; border-radius:8px; }
-.wt-sidebar-links a:hover { background:#f2f6ff; }
+/* Forced theme via [data-theme] */
+html[data-theme="light"] {
+  --bg: #f7f7f8;
+  --surface: #ffffff;
+  --text: #151515;
+  --muted: #5c5c5c;
+  --border: #e6e6e6;
+  --header-bg: #0f1114;
+  --header-grad: linear-gradient(180deg, #0f1114 0%, #0b0c0e 100%);
+  --footer-bg: #0f1114;
+}
+html[data-theme="dark"] {
+  --bg: #0b0b0c;
+  --surface: #111214;
+  --text: #e9e9ea;
+  --muted: #b0b0b3;
+  --border: #1f2124;
+  --header-bg: #0e0f12;
+  --header-grad: linear-gradient(180deg, #101215 0%, #0a0b0d 100%);
+  --footer-bg: #0e0f12;
+}
 
-/* Hero */
-.wt-hero { background:linear-gradient(120deg, #1e8bc3, #22a6b3 60%, #6ab04c); color:#fff; padding:38px 22px; border-radius:14px; margin: 18px 0 26px; }
-.wt-hero h1 { margin:0 0 8px; font-size:32px; }
-.wt-hero p { margin:0; font-size:17px; opacity:.96; }
+/* ========== Base ========== */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body.wt-body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { color: var(--brand-600); text-decoration: none; }
+a:hover { color: var(--brand); }
 
-/* Footer */
-.wt-footer { background:#022336; color:#cfe6ff; }
-.wt-footer .wt-container { padding:18px 0; text-align:center; font-size:14px; }
+/* Container */
+.wt-container {
+  width: min(1150px, 92%);
+  margin: 0 auto;
+}
+
+/* ========== Header / Navbar ========== */
+.wt-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--header-grad);
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-1);
+}
+
+.wt-nav {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 16px;
+  min-height: 64px;
+}
+
+/* Brand (logo + testo) */
+.wt-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+}
+.wt-logo {
+  width: 32px; height: 32px; display: block; object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.25));
+}
+.wt-brand-text {
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: .2px;
+  color: #fff;
+}
+
+/* Menu desktop */
