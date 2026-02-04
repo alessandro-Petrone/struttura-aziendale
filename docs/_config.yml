@@ -1,12 +1,9 @@
 title: WebTecnologie
 description: Sviluppo web, soluzioni digitali e applicazioni moderne con integrazioni AI per cloud, enterprise e WordPress.
-url: "https://webtecnologie.github.io"    # dominio principale dell'host GitHub Pages
-baseurl: "/struttura-aziendale"           # project site: NON rimuovere (per ora)
+baseurl: "/struttura-aziendale"
+url: "https://webtecnologie.github.io"
 
-theme: null
 markdown: kramdown
-kramdown:
-  input: GFM
 
 nav:
   - name: Home
@@ -20,9 +17,3 @@ nav:
 
 brand:
   name: WebTecnologie
-  color_primary: "#0a3d62"
-  color_accent:  "#22a6b3"
-  color_hero_a:  "#1e8bc3"
-  color_hero_b:  "#22a6b3"
-  color_hero_c:  "#6ab04c"
-``
