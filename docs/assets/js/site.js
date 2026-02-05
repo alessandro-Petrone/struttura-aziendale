@@ -32,7 +32,7 @@ window.WT = (function () {
   }
 
   function setStoredTheme(v) {
-    try { localStorage.setItem(KEY, v); } catch {}
+    try { localStorage.setItem(KEY, v); } catch { }
   }
 
   function toggleTheme() {
@@ -61,7 +61,20 @@ window.WT = (function () {
   return {
     toggleTheme,
     applyStoredTheme,
-    toggleSidebar
+    toggleSidebar,
+    switchTab: function (tabId, btn) {
+      const container = btn.closest('.wt-tabs-container');
+      if (!container) return;
+
+      // Update buttons
+      container.querySelectorAll('.wt-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      // Update contents
+      container.querySelectorAll('.wt-tab-content').forEach(c => c.classList.remove('active'));
+      const target = container.querySelector('#' + tabId);
+      if (target) target.classList.add('active');
+    }
   };
 
 })();
