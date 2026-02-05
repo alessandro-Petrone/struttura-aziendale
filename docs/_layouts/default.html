@@ -5,25 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: site.title }}</title>
 
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fluentui/svg-icons/fonts/fluent-icons.css" />
+  {{ 
+  https://cdn.jsdelivr.net/npm/@fluentui/svg-icons/fonts/fluent-icons.css
   <meta name="color-scheme" content="light dark" />
 </head>
 
 <body class="wt-body">
 
   {%- comment -%}
-    LANGUAGE CALCULATION
+    LANGUAGE DETECTION (robusta):
+    - Usa page.lang se presente
+    - Altrimenti controlla il path SENZA baseurl per '/en/'
+    - Calcola gli URL IT/EN in base al path neutro
   {%- endcomment -%}
-  {%- assign current_url = page.url | default: '/' -%}
-  {%- assign is_en = current_url | slice: 0,4 == '/en/' -%}
+
+  {%- assign is_en = false -%}
+
+  {%- if page.lang == 'en' -%}
+    {%- assign is_en = true -%}
+  {%- else -%}
+    {%- assign base = site.baseurl | default: '' -%}
+    {%- assign path = page.url | default: '/' -%}
+    {%- assign path_no_base = path | remove_first: base -%}
+    {%- if path_no_base contains '/en/' or path_no_base == '/en' or path_no_base == '/en/' -%}
+      {%- assign is_en = true -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- assign base = site.baseurl | default: '' -%}
+  {%- assign current_path = page.url | default: '/' | remove_first: base -%}
 
   {%- if is_en -%}
-    {%- assign url_it = current_url | remove_first: '/en' -%}
-    {%- assign url_en = current_url -%}
+    {%- assign url_it = current_path | remove_first: '/en' -%}
+    {%- assign url_en = current_path -%}
   {%- else -%}
-    {%- assign url_it = current_url -%}
-    {%- assign url_en = '/en' | append: current_url -%}
+    {%- assign url_it = current_path -%}
+    {%- assign url_en = '/en' | append: current_path -%}
   {%- endif -%}
 
   {%- assign en_enabled = site.data.i18n.en_enabled | default: false -%}
@@ -34,13 +51,9 @@
 
       <!-- BRAND -->
       <div class="wt-brand">
-        <a class="wt-brand-link" href="{{ '/' | relative_url }}">
+        {{ 
           {% if site.brand.logo %}
-            <img src="{{ site.brand.logo | relative_url }}"
-                 class="wt-logo"
-                 alt="Logo {{ site.brand.name }}"
-                 data-logo-light="{{ site.brand.logo | relative_url }}"
-                 {% if site.brand.logo_dark %} data-logo-dark="{{ site.brand.logo_dark | relative_url }}" {% endif %} />
+            {{ site.brand.logo | relative_url }}
           {% endif %}
           <span class="wt-brand-text">{{ site.brand.name }}</span>
         </a>
@@ -48,7 +61,7 @@
 
       <!-- LANGUAGE SWITCHER -->
       <div class="wt-lang">
-        <a class="wt-lang-item {% unless is_en %}active{% endunless %}" href="{{ url_it | relative_url }}">IT</a>
+        {{ url_it | relative_url }}IT</a>
         <span class="wt-lang-sep">|</span>
         {% if en_enabled %}
           <a class="wt-lang-item {% if is_en %}active{% endif %}" href="{{ url_en | relative_url }}">EN</a>
@@ -94,16 +107,12 @@
     <nav class="wt-sidebar-links">
       {% for item in nav_items_sidebar %}
         <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-      {% endfor %}
-    </nav>
-
-    <!-- LANG SWITCH MOBILE -->
-    <div class="wt-sidebar-theme">
+     heme">
       <div class="wt-lang wt-lang-mobile">
-        <a class="wt-lang-item {% unless is_en %}active{% endunless %}" href="{{ url_it | relative_url }}">IT</a>
+        {{ url_it | relative_url }}IT</a>
         <span class="wt-lang-sep">|</span>
         {% if en_enabled %}
-          <a class="wt-lang-item {% if is_en %}active{% endif %}" href="{{ url_en | relative_url }}">EN</a>
+          {{ url_en | relative_url }}EN</a>
         {% else %}
           <span class="wt-lang-item wt-disabled">EN</span>
         {% endif %}
