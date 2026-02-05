@@ -1,29 +1,32 @@
 ---
-title: "Projects"
 layout: default
-permalink: /en/projects/
+title: Projects
 lang: en
+permalink: /en/projects/
 ---
 
-<div class="page-hero">
-  <h1 class="gold-title">Selected Projects</h1>
-  <p class="hero-subtitle">
-    Real cases built for customers with modern stacks and AI integrations.
-  </p>
-</div>
+# Projects
 
-<div class="services-grid">
-  <div class="service-card">
-    <div class="service-icon">📊</div>
-    <h2>Company Structure (SPFx)</h2>
-    <p>Org chart web part, M365-connected directory.</p>
-    <a class="btn-gold" href="https://github.com/webtecnologie/struttura-aziendale" target="_blank" rel="noopener">Code · GitHub</a>
-  </div>
+A curated selection of applications, integrations, and solutions developed across various industries.
 
-  <div class="service-card">
-    <div class="service-icon">🤖</div>
-    <h2>E‑commerce AI Chatbot</h2>
-    <p>Support automation with RAG FAQ, WooCommerce and Telegram.</p>
-    <a class="btn-gold" href="#" aria-disabled="true">Case Study (soon)</a>
-  </div>
-</div>
+## 🧩 Custom Applications
+Modern, scalable web applications designed for business needs and integration with existing systems.
+
+## 🤖 AI & Automation
+AI‑powered solutions including:
+- Customer support automation
+- Intelligent chatbots
+- Automated workflows
+- Prediction & data analysis
+
+## 🏢 Enterprise & Cloud
+Implementations for:
+- Microsoft 365
+- SharePoint Online (SPFx)
+- Azure Functions & automation services
+
+## 🌐 Professional WordPress
+Professional websites including:
+- Custom themes
+- Headless architectures & API integrations
+- Advanced optimizations
