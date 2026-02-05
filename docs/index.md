@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+lang: it
+permalink: /
 ---
 
 <div class="wt-hero">
