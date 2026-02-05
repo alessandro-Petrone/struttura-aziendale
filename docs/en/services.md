@@ -1,45 +1,36 @@
 ---
-title: "Services"
 layout: default
-permalink: /en/services/
+title: Services
 lang: en
+permalink: /en/services/
 ---
 
-<div class="page-hero">
-  <h1 class="gold-title">Professional Services</h1>
-  <p class="hero-subtitle">
-    Tailor‑made digital solutions, web development and AI integrations for cloud & enterprise platforms.
-  </p>
-</div>
+# Services
 
-<div class="services-grid">
-  <div class="service-card">
-    <div class="service-icon">💻</div>
-    <h2>Modern Web Development</h2>
-    <p>React, Next.js, SPFx for Microsoft 365 and SharePoint Online.</p>
-  </div>
+## 🚀 Tailored digital solutions  
+We design and deliver modern, secure, and high‑performance solutions for companies, professionals, and organizations.
 
-  <div class="service-card">
-    <div class="service-icon">⚙️</div>
-    <h2>Scalable Backends</h2>
-    <p>APIs with Node.js, Python, PHP. Security, auth and integrations.</p>
-  </div>
+### 💻 Web Development
+- Modern applications (React, Next.js)
+- Responsive and high‑performance websites
+- Advanced API integrations
 
-  <div class="service-card">
-    <div class="service-icon">🤖</div>
-    <h2>AI Integrations</h2>
-    <p>Chatbots, RAG, automation and virtual assistants.</p>
-  </div>
+### ⚙️ Backend & API Engineering
+- Python, Node.js, PHP
+- Microservices and scalable architectures
+- Security, authentication, logging
 
-  <div class="service-card">
-    <div class="service-icon">☁️</div>
-    <h2>Cloud & Enterprise</h2>
-    <p>Microsoft 365, Azure, Graph API, migrations and automation.</p>
-  </div>
+### 🤖 Artificial Intelligence
+- Chatbots and virtual assistants
+- AI automations
+- Custom ML models
 
-  <div class="service-card">
-    <div class="service-icon">🌐</div>
-    <h2>Professional WordPress</h2>
-    <p>Custom themes, APIs, performance and SEO.</p>
-  </div>
-</div>
+### ☁️ Cloud & Enterprise
+- Microsoft 365 / Azure
+- SharePoint Online, SPFx
+- Hybrid systems & enterprise integrations
+
+### 🌐 Professional WordPress
+- Custom themes
+- ACF, CPT, REST API
+- Performance & security optimization
