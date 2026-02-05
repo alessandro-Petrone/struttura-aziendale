@@ -6,18 +6,34 @@ permalink: /en/
 ---
 
 <div class="wt-hero">
-  <h1>Digital Solutions, Cloud & AI</h1>
+  <h1>Digital Solutions for Your Business</h1>
   <p>
-    Modern web development and advanced applications with AI integrations for cloud
-    environments, enterprise platforms, and custom WordPress solutions.
+    Modern web development, AI integrations and cloud technologies for
+    companies, professionals and organizations looking for performance,
+    scalability and innovation.
   </p>
 </div>
 
-## 🔧 What we do
+---
 
-- **Modern Web Development** (React, Next.js, SPFx)
-- **Scalable Backends** (Python, Node.js, PHP)
-- **Applied AI** (chatbots, automations, ML)
-- **Cloud & Enterprise** (Microsoft 365, Azure, Graph)
-- **Professional WordPress** (custom themes, API, performance)
-``
+## 🚀 What We Offer
+
+### 🌐 Modern Web Development
+High-performance websites and apps built with
+**React, Next.js, SPFx, HTML5, CSS.**
+
+### ⚙️ Backend & Integrations
+Reliable server-side solutions:
+**Node.js, Python, PHP, REST APIs, microservices.**
+
+### 🤖 Applied AI & Automation
+Chatbots, automations, predictive models with
+**OpenAI, custom AI, RAG systems.**
+
+### ☁️ Cloud & Enterprise
+Professional integrations for:
+**Microsoft 365, SharePoint Online, Azure, Graph API.**
+
+### 🏗 Professional WordPress
+Advanced WordPress development:
+**custom themes, ACF, CPT, API, performance optimization.**
