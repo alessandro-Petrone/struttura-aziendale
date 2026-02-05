@@ -1,13 +1,24 @@
 ---
 layout: default
-title: Contatti — WebTecnologie
+title: Contatti
+lang: it
+permalink: /contatti/
 ---
 
 # Contatti
 
-Hai un progetto o un’idea da realizzare? Scrivimi.
+Hai un progetto, un’idea o vuoi una consulenza?
 
-- 📧 **webtecnologie@gmail.com**
-- 🌐 <https://webtecnologie.github.io>
+📧 **Email:** info@webtecnologie.it  
+🌍 **Sito:** https://webtecnologie.it  
+💼 Supporto, sviluppi, consulenze e progetti su misura.
 
-> Possiamo organizzare una call di analisi e proporti un **proof‑of‑concept** rapido.
+### 📱 Richiedi un contatto
+Compila il modulo o invia un’email per ricevere una risposta entro 24 ore.
+
+---
+
+## Perché contattarci?
+- Soluzioni professionali e scalabili  
+- Integrazioni AI per automazioni e crescita  
+- Supporto tecnico e consulenza strategica  
