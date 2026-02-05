@@ -15,6 +15,17 @@ nav:
   - name: Contatti
     url: /contatti
 
+nav_en:
+  - name: Home
+    url: /en/
+  - name: Services
+    url: /en/services/
+  - name: Projects
+    url: /en/projects/
+  - name: Contact
+    url: /en/contact/
+
+
 brand:
   name: WebTecnologie
   logo: /assets/img/logo.png
