@@ -288,3 +288,53 @@ html[data-theme="dark"] .wt-moon { opacity: 1; transform: translateY(0); }
   margin: 0;
   color: var(--muted);
 }
+/* ===========================
+   LANGUAGE SWITCHER (IT | EN)
+   =========================== */
+
+.wt-lang {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.wt-lang-item {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .25s ease, opacity .25s ease;
+}
+
+.wt-lang-item:hover {
+  color: var(--brand);
+}
+
+.wt-lang-item.active {
+  color: var(--brand);
+  text-shadow: 0 0 6px rgba(212,175,55,0.5);
+}
+
+.wt-lang-sep {
+  color: var(--muted);
+  opacity: .4;
+}
+
+/* Versione disabilitata (quando en_enabled = false) */
+.wt-disabled {
+  opacity: .4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* MOBILE SIDEBAR LANGUAGE SWITCH */
+.wt-lang-mobile {
+  margin-top: 20px;
+  justify-content: center;
+}
+
